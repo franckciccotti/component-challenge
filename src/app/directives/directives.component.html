@@ -1,0 +1,17 @@
+<!-- Ajoute un titre "Bonjour !"
+Crée deux boutons en HTML : "View" et "Edit" (inutile de leur faire faire quoi que ce soit)
+Déclare une propriété boolean isAdmin dans ton component (false ou true).
+Utilise une structural directive pour afficher "Edit" uniquement si isAdmin est à true.
+Utilise NgClass ou NgStyle pour afficher le titre en rouge quand isAdmin est à true.
+BONUS : Créer un bouton qui permet, au clic, de changer la valeur de isAdmin.
+
+Critères de validation ✅
+Quand tu changes la valeur de isAdmin: false → true (ou true → false) dans ton code, le rendu doit être différent et correspondre aux points ci-dessus. -->
+
+<h1 [ngStyle]="{backgroundColor:isAdmin ? 'red' : 'transparent'}">Bonjour !</h1>
+
+<div class="display">
+    <button type="button" (click)="statut()">View</button>
+    
+    <button type="button" *ngIf="isAdmin">Edit</button>
+</div>

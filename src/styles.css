@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: content-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
